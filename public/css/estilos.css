@@ -1,0 +1,160 @@
+/* Montserrat */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+}
+
+/* Roboto */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+}
+
+/* Estilos CSS mejorados */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to bottom, #AA0000, #660000); /* Fondo con degradado */
+  color: white; /* Letras blancas */
+}
+
+h1 {
+  color: white;
+}
+
+label {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.table-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  background-color: black;
+}
+
+.nameTb {
+  min-width: 220px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.priceTd {
+  min-width: 100px;
+  font-weight: bold;
+  color: crimson;
+}
+
+#btn-addPrd, #btn-delPrd {
+  height: 35px;
+  width: 35px;
+  margin-left: 45px;
+  margin-right: 15px;
+  text-align: center;
+  font-weight: bold;
+  background-color: black; /* Botones negros */
+  color: white; /* Letras blancas */
+  border-radius: 10px; /* Bordes redondeados */
+  cursor: pointer;
+}
+
+#btn-addPrd:hover, #btn-delPrd:hover {
+  background-color: #FF0000; /* Cambio de color al pasar el mouse (hover) */
+}
+
+.chatContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.chatLine {
+  display: flex;
+  flex-direction: row;
+}
+
+.user {
+  font-weight: bold;
+  color: blue;
+}
+
+.time {
+  color: brown;
+}
+
+.msg {
+  font-style: italic;
+  color: white;
+}
+
+.table-line img {
+  width: 70px;
+  height: 70px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.jumbotron {
+  margin: 10px;
+  background-color: black;
+  border-radius: 2%;
+}
+
+/* LOADING ---------------- */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loading-icon {
+  border-radius: 50%;
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #3498db;
+  animation: spin 1s ease-in-out infinite;
+  height: 40px;
+  width: 40px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

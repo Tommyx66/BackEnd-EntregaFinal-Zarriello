@@ -1,0 +1,40 @@
+<div class="jumbotron" id="adminPanel">
+    <h1>Ingrese Nuevo Producto</h1>
+    <br>
+    <form>
+    <!-- <form onsubmit="return sendProduct(this)"> -->
+        <!-- Campo nombre del producto -->
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" class="form-control" type="text" name="name" required>
+        </div>
+
+        <!-- Campo precio del producto -->
+        <div class="form-group">
+            <label for="precio">Precio</label>
+            <input id="precio" class="form-control" type="number" step="0.01" name="price" required>
+        </div>
+
+        <!-- Campo url de la foto del producto -->
+        <div class="form-group">
+            <label for="foto">Foto URL</label>
+            <input id="foto" class="form-control" type="url" name="image" required>
+        </div>
+
+        <!-- Campo url de la descripcion del producto -->
+        <div class="form-group">
+            <label for="desc">Descripcion</label>
+            <input id="desc" class="form-control" type="text" name="desc" required>
+        </div>
+
+        <!-- Campo url de la stock del producto -->
+        <div class="form-group">
+            <label for="stock">Stock</label>
+            <input id="stock" class="form-control" type="number" name="stock" required>
+        </div>
+
+        <!-- Botón de envío -->
+        <button class="btn btn-danger mt-3" id="btn-newProduct">Agregar</button>
+        <button class="btn btn-danger mt-3" id="btn-newProductExit">Salir</button>
+    </form>
+</div>

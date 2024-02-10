@@ -1,0 +1,50 @@
+<div class="container mt-3">
+    
+    <div class="jumbotron" id="wellcome">
+        <h1 id="wellcomeUserName"></h1>
+        <button class="btn btn-danger mt-3" id="btn-logout">Salir</button>
+        <button class="btn btn-danger mt-3" id="btn-carrito">Carrito</button>
+        <button class="btn btn-danger mt-3" id="btn-admin">Administrar</button>
+    </div>
+
+    <div class="jumbotron" id="productlistPanel">
+
+        <h1>Lista de Productos</h1>
+
+        <div id="productList">
+            <div class="loading">
+                <div class="loading-icon"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="jumbotron" id="mensajePanel">
+        <h1>Mensajeria de Chat</h1>
+        <br>
+        <form>
+        <!-- <form onsubmit="return sendMessage(this)"> -->
+            <!-- Campo nombre del producto -->
+            <div class="form-group">
+                <label for="nombre">Nombre Usuario</label>
+                <input id="usuario" class="form-control" type="text" name="chatUsr" required>
+            </div>
+
+            <!-- Campo precio del producto -->
+            <div class="form-group">
+                <label for="precio">Mensaje</label>
+                <input id="mensaje" class="form-control" type="text" name="chatMsg" required>
+            </div>
+
+            <!-- Botón de envío -->
+            <button class="btn btn-danger mt-3" id="btn-newMessage" type="submit">Enviar</button>
+        </form>
+        <hr>
+        <div id="chatContent">
+            <div class="loading">
+                <div class="loading-icon"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
